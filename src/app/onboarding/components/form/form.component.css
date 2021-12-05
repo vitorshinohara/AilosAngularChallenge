@@ -1,0 +1,45 @@
+
+.label {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    /* Escala de cinza/Preto Ailos */
+    color: #040F14;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+input {
+    background: #FFFFFF;
+    width: 270px;
+    height: 34px;
+    border: 1px solid #889499;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+button {
+    padding: 0px 10px;
+    height: 34px;
+    border: 1px solid #125D79;
+    font-size: 1em;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #165C7D;
+    margin: 0px 16px;
+}

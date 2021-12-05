@@ -1,0 +1,9 @@
+{
+    "queryByCpf":  {
+        "user": {"id": "1", "cpf": "", "name": "Mariane de Sousa Oliveira", "status": "Regular" },
+        "account": [
+            {"accountType": "Conta aplicação", "accountDescription": "Cooperativa Viacredi", "accountNumber": "557932-4", "url": "https://www.google.com.br/"},
+            {"accountType": "Conta corrente", "accountDescription": "Cooperativa Viacredi", "accountNumber": "778461-8", "url": "https://www.google.com.br/"}
+        ]
+    }
+}

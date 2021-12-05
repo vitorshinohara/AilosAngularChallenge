@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    background-color: #E7EEF1;
+  }
+
+  .main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  main {
+      flex-direction: row;
+      flex: 1;
+  }

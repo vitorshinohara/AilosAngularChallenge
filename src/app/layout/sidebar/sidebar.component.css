@@ -1,0 +1,45 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100px;
+    background-color: #165C7D;
+}
+
+ul {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    list-style-type: none;
+}
+
+li {
+    margin: 0px;
+    padding: 16px 0px;
+}
+
+
+
+.logoContainer {
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 80px;
+}
+
+.icon {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.inactive {
+    color:#739DB1;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
