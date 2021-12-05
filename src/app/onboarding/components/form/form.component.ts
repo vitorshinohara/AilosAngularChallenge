@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { NgForm } from '@angular/forms';
 
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { ValidateCPF } from 'src/app/shared/validators/cpf-validator';
 
 @Component({
   selector: 'app-onboarding-form',
@@ -15,14 +15,14 @@ export class FormComponent implements OnInit {
   constructor() { }
 
   searchByCpfForm = new FormGroup({
-    cpf: new FormControl('')
+    cpf: new FormControl('', [Validators.minLength(11), Validators.maxLength(11), ValidateCPF])
   });
 
   get cpf() {return this.searchByCpfForm.get('cpf')}
 
-  //  submit(formData: NgForm){
-  //    this.formSubmissionData.emit("")
-  //   }
+    submit(){
+      this.formSubmissionData.emit(this.searchByCpfForm.get('cpf')?.value)
+     }
 
   ngOnInit(): void {
   }
