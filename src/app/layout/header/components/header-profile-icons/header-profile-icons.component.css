@@ -1,59 +1,59 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .container > * {
-    margin: 0px 8px;
+  margin: 0px 8px;
 }
 
 button {
-    background: none;
-    border-radius: 16px;
-    padding: 8px 16px;
-    border: 1px solid #125D79;
-    font-size: 16px;
-    font-family: 'Exo', sans-serif;
-    font-weight: bold;
-    color: #125D79;
-    cursor: pointer;
+  background: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+  border: 1px solid #125d79;
+  font-size: 16px;
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  color: #125d79;
+  cursor: pointer;
 }
 
 button:hover {
-    background: #125D79;
-    color: white;
-    transition: all 0.3s ease-in-out;
+  background: #125d79;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #125D79;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #125d79;
 }
 
-fa-icon[data-count]{
-    position:relative;
+fa-icon[data-count] {
+  position: relative;
 }
 
-fa-icon[data-count]:after{
-    position: absolute;
-    right: -0.75em;
-    top: -.75em;
-    content: attr(data-count);
-    padding: .25em;
-    border-radius: 1vh;	
-    line-height: .9em;
-    color: white;
-    background: rgba(255,0,0,1);
-    text-align: center;
-    min-width: 1.75em;
-    font: bold .4em sans-serif;
+fa-icon[data-count]:after {
+  position: absolute;
+  right: -0.75em;
+  top: -0.75em;
+  content: attr(data-count);
+  padding: 0.25em;
+  border-radius: 1vh;
+  line-height: 0.9em;
+  color: white;
+  background: rgba(255, 0, 0, 1);
+  text-align: center;
+  min-width: 1.75em;
+  font: bold 0.4em sans-serif;
 }
 
 fa-icon {
-    color: #125D79;
-    font-size: 24px;
+  color: #125d79;
+  font-size: 24px;
 }
