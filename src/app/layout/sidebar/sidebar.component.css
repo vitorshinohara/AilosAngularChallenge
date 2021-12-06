@@ -6,10 +6,6 @@ nav {
     background-color: #165C7D;
 }
 
-a {
-    cursor: pointer;
-}
-
 ul {
     display: flex;
     flex-grow: 1;

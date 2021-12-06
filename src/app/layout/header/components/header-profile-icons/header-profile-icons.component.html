@@ -1,8 +1,13 @@
 <div class="container">
-    <fa-icon [icon]="faBell" size="lg" data-count="7"></fa-icon>
-
+    <a routerLink="/">
+        <fa-icon [icon]="faBell" size="lg" data-count="7"></fa-icon>
+    </a>
+    
     <button class="btn btn-transparent btn-header">VIACREDI</button>
-
-    <img src="/assets/images/profile.png" alt="profile-picture">
+    
+    <a routerLink="/">
+        <img src="/assets/images/profile.png" alt="profile-picture">
+        <fa-icon class="profileIcon" [icon]="faCog"></fa-icon>
+    </a>
 
 </div>
