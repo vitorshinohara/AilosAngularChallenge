@@ -1,14 +1,16 @@
 
+
+
 <h1 align="center">
-<img src="https://www.ailos.coop.br/wp-content/themes/theme-ailos/public/images/logo-ailos.svg" width=250>
-<br> Ailos Front-End Challenge
+Ailos Front-End Challenge
 </h1>
 
+
 <p align="center">
-  <a href="#instalação">Instalação</a> •
-  <a href="#tecnologias-utilizadas">Tecnologias utilizadas</a>  •
-  <a href="#estrutura-do-código">Estrutura do Código</a>  •
-  <a href="#demonstração">Demonstração</a>
+  <a href="#computer-instalação">Instalação</a> •
+  <a href="#-tecnologias-utilizadas">Tecnologias utilizadas</a>  •
+  <a href="#-estrutura-do-código">Estrutura do Código</a>  •
+  <a href="#%EF%B8%8F-demonstração">Demonstração</a>
 </p>  
 
 Este é um desafio proposto pela Ailos. O desafio consiste em desenvolver duas páginas as quais devem permitir o usuário consultar dados de um cliente, através de seu CPF. 
@@ -18,9 +20,9 @@ Para este projeto, utilizamos o framework [Angular](https://angular.io/). Além 
 <div align="center">
 	<img src="https://i.imgur.com/MP4Fnia.png" width=650/>
 	<img src="https://i.imgur.com/OTB1iin.gif" width=650/>
-<div>
+</div>
 
-## 💻 Instalação
+## :computer: Instalação
 
 ```shell
 # Clonando o projeto
@@ -38,7 +40,7 @@ $ npm start
 
 Ao executar o comando `npm start`, o servidor front-end estará disponível na URL `http://localhost:4200`.
 
-## 🚀 Tecnologias utilizadas
+##  🚀 Tecnologias utilizadas 
 
   Para o desenvolvimento deste projeto, as seguintes tecnologias e bibliotecas foram utilizados:
 
