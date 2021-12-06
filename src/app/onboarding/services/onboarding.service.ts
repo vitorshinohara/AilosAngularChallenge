@@ -15,7 +15,6 @@ export class OnboardingService {
   constructor(private http : HttpClient) { }
 
    getUserDataByCpf(cpf : string) {
-    return  this.http.get<UserData>("http://localhost:3000/queryByCpf", this.httpOptions)
+    return  this.http.get<UserData>("https://ailos-39b5a-default-rtdb.firebaseio.com/queryByCpf.json", this.httpOptions)
   }
-
 }
