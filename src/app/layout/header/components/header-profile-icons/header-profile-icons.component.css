@@ -9,23 +9,11 @@
   margin: 0px 8px;
 }
 
-button {
-  background: none;
+.btn-header {
   border-radius: 16px;
   padding: 8px 16px;
-  border: 1px solid #125d79;
-  font-size: 16px;
-  font-family: "Exo", sans-serif;
-  font-weight: bold;
-  color: #125d79;
-  cursor: pointer;
 }
 
-button:hover {
-  background: #125d79;
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
 
 img {
   border-radius: 50%;

@@ -10,6 +10,7 @@
 }
 
 form {
+  margin-top: 32px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -41,4 +42,5 @@ input {
 
 .btn-submit {
   height: 34px;
+  margin-left: 24px;
 }

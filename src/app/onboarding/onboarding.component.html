@@ -1,21 +1,27 @@
-<div class="container">
+<div class="wrapper">
+    <app-header></app-header>
+    <div class="container">
 
-    <app-onboarding-stepper></app-onboarding-stepper>
+        <app-onboarding-stepper></app-onboarding-stepper>
 
-    <div class="title">Informe o CPF do futuro cooperado (a)</div>
+        <div class="title">Informe o CPF do futuro cooperado (a)</div>
 
-    <div class="subtitle">
-        Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.<br>
-        Digite apenas os números (sem pontos ou traços). 
-    </div>
+        <div class="subtitle">
+            Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.<br>
+            Digite apenas os números (sem pontos ou traços). 
+        </div> <!--- subtitle -->
 
-    <app-onboarding-form  (formSubmissionData)=loadCpfData($event)></app-onboarding-form>
+        <app-onboarding-form  (formSubmissionData)=loadCpfData($event)></app-onboarding-form>
+        
+        <div class="cardContainer" *ngIf="userData">
+            <app-user-data-card [user]="userData.user"></app-user-data-card>
+            <div *ngFor="let x of accounts">
+                <app-account-data-card [account]="x"></app-account-data-card>
+            </div>
+        </div> <!-- cardContainer -->
+        
+    </div> <!-- container -->
     
-    <div class="cardContainer" *ngIf="userData">
-        <app-user-data-card [user]="userData.user"></app-user-data-card>
-        <div *ngFor="let x of accounts">
-            <app-account-data-card [account]="x"></app-account-data-card>
-        </div>
-    </div>
-    
-</div>
+    <app-footer [buttonsToDisplay]="buttonsToDisplay" ></app-footer>
+
+</div> <!-- wrapper -->

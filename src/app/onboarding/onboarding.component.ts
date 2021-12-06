@@ -9,7 +9,7 @@ import { OnboardingService } from './services/onboarding.service';
   styleUrls: ['./onboarding.component.css']
 })
 export class OnboardingComponent implements OnInit {
-
+  buttonsToDisplay: string[] = ["onboarding_tips"]
   userData : UserData | undefined
   accounts : Account[] | undefined
 
@@ -19,6 +19,7 @@ export class OnboardingComponent implements OnInit {
     this.onboardingService.getUserDataByCpf(cpf).subscribe( response => {
       this.userData = response
       this.accounts = response.account
+      this.buttonsToDisplay = ["onboarding", "onboarding_tips"]
     } )
     
   }

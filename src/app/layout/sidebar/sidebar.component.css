@@ -6,6 +6,10 @@ nav {
     background-color: #165C7D;
 }
 
+a {
+    cursor: pointer;
+}
+
 ul {
     display: flex;
     flex-grow: 1;
@@ -20,8 +24,6 @@ li {
     padding: 16px 0px;
 }
 
-
-
 .logoContainer {
     justify-content: center;
     align-items: center;
@@ -31,8 +33,9 @@ li {
 
 .icon {
     color: #fff;
+    height: 30px;
+    width: 30px;
     font-size: 25px;
-    cursor: pointer;
 }
 
 .inactive {

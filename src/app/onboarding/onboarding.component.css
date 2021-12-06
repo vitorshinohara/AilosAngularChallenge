@@ -1,5 +1,12 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   padding: 32px;
+  flex: 1;
 }
 
 .title {
@@ -11,7 +18,7 @@
   line-height: 30px;
   color: #101213;
   margin-bottom: 8px;
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .subtitle {
@@ -26,7 +33,7 @@
 }
 
 .cardContainer {
-  margin-top: 32px;
+  margin-top: 24px;
   display: flex;
   flex-direction: row;
 }

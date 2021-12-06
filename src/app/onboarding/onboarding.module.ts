@@ -9,6 +9,7 @@ import { UserDataCardComponent } from './components/card/user-data-card/user-dat
 import { AccountDataCardComponent } from './components/card/account-data-card/account-data-card.component';
 import { OnboardingComponent } from './onboarding.component';
 import { OnboardingService } from './services/onboarding.service';
+import { LayoutModule } from '../layout/layout.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { OnboardingService } from './services/onboarding.service';
   ],
   imports: [
     CommonModule,
+    LayoutModule,
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule
