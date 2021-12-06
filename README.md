@@ -44,7 +44,7 @@ Ao executar o comando `npm start`, o servidor front-end estará disponível na U
 
 - [Typescript](https://www.typescriptlang.org/)
 - [Angular](https://angular.io/)
-- [JSON-Server](https://www.npmjs.com/package/json-server)
+- [Firebase](https://firebase.google.com/)
 - [Font-Awesome](https://github.com/FortAwesome/angular-fontawesome)
 
 
