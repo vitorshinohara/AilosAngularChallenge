@@ -15,16 +15,26 @@ export class FormComponent implements OnInit {
   constructor() { }
 
   searchByCpfForm = new FormGroup({
-    cpf: new FormControl('', [Validators.minLength(11), Validators.maxLength(11), ValidateCPF])
+    cpf: new FormControl('', [Validators.minLength(14), Validators.maxLength(14), ValidateCPF])
   });
 
   get cpf() {return this.searchByCpfForm.get('cpf')}
 
-    submit(){
-      this.formSubmissionData.emit(this.searchByCpfForm.get('cpf')?.value)
-     }
+  submit(){
+    this.formSubmissionData.emit(this.searchByCpfForm.get('cpf')?.value)
+  }
 
   ngOnInit(): void {
+
+    this.searchByCpfForm.controls['cpf'].valueChanges.subscribe(data => {
+      let cpf = data.replace(/\D/g,"")
+      cpf = cpf.replace(/(\d{3})(\d)/,"$1.$2");
+      cpf = cpf.replace(/(\d{3})(\d)/,"$1.$2");
+      cpf = cpf.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
+      this.searchByCpfForm.controls['cpf'].setValue(cpf, {emitEvent: false});
+    });
+
   }
+
 
 }
