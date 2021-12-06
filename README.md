@@ -7,11 +7,12 @@
   <a href="#">Instalação</a> •
   <a href="#">Tecnologias utilizadas</a>  •
   <a href="#">Estrutura do Código</a>  •
+  <a href="#">Demonstração</a>
 </p>  
 
 Este é um desafio proposto pela Ailos. O desafio consiste em desenvolver duas páginas as quais devem permitir o usuário consultar dados de um cliente, através de seu CPF. 
 
-Para este projeto, utilizamos o framework [Angular](https://angular.io/). Além disso, simulamos um servidor back-end através da biblioteca [json-server](https://www.npmjs.com/package/json-server).
+Para este projeto, utilizamos o framework [Angular](https://angular.io/). Além disso, utilizamos um banco de dados Firebase, para simular uma API REST, o qual a nossa aplicação consulta dados.
 
 <h1 align="center">
 	<img src="https://i.imgur.com/MP4Fnia.png" width=650/>
@@ -36,14 +37,6 @@ $ npm start
 ```
 
 Ao executar o comando `npm start`, o servidor front-end estará disponível na URL `http://localhost:4200`.
- 
-Como mencionado anteriormente, utilizamos o `json-server` para simulação de um servidor de back-end, para consulta dos dados.
-
-Para iniciar o servidor back-end, basta executar o comando na raiz do projeto:
-
-```shell
-$ json-server --watch ./src/assets/json-server/db.json
-```
 
 ## Tecnologias utilizadas
 
@@ -85,9 +78,15 @@ src
 ├───assets
 │   ├───images                          # Imagens utilizadas na aplicação
 │   │   └───icons                       # Ícones utilizados na aplicação
-│   └───json-server                     # Configurações do pacote json-server
+│   └───json-server                     # Arquivos de dados para API REST do Firebase / JSON Server
 │           
 └───environments                        # Arquivos de configuração de variáveis de ambiente
         environment.prod.ts
         environment.ts
 ``` 
+
+## Demonstração
+
+Hospedamos nossa aplicação através do Firebase, a qual está disponível através do link:
+
+https://ailos-39b5a.web.app/
