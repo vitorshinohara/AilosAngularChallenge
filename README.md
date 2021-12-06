@@ -1,39 +1,93 @@
-# Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+<h1 align="center">
+ Ailos Front-End Challenge
+</h1>
 
-## Development server
+<p align="center">
+  <a href="#">Instalação</a> •
+  <a href="#">Tecnologias utilizadas</a>  •
+  <a href="#">Estrutura do Código</a>  •
+</p>  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Este é um desafio proposto pela Ailos. O desafio consiste em desenvolver duas páginas as quais devem permitir o usuário consultar dados de um cliente, através de seu CPF. 
 
-## Code scaffolding
+Para este projeto, utilizamos o framework [Angular](https://angular.io/). Além disso, simulamos um servidor back-end através da biblioteca [json-server](https://www.npmjs.com/package/json-server).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h1 align="center">
+	<img src="https://i.imgur.com/MP4Fnia.png" width=650/>
+	<img src="https://i.imgur.com/mQd0MmU.gif" width=650/>
+</h1>
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```shell
+# Clonando o projeto
+$ git clone https://github.com/vitorshinohara/AilosChallenge
 
-## Running unit tests
+# Navegar até a pasta raiz do projeto
+$ cd AilosChallenge
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Instalar dependências
+$ sudo npm install
+$ sudo npm install -g json-server
 
-## Running end-to-end tests
+# Iniciar servidor
+$ npm start
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Ao executar o comando `npm start`, o servidor front-end estará disponível na URL `http://localhost:4200`.
+ 
+Como mencionado anteriormente, utilizamos o `json-server` para simulação de um servidor de back-end, para consulta dos dados.
 
-## Further help
+Para iniciar o servidor back-end, basta executar o comando na raiz do projeto:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```shell
+$ json-server --watch ./src/assets/json-server/db.json
+```
+
+## Tecnologias utilizadas
+
+  Para o desenvolvimento deste projeto, as seguintes tecnologias e bibliotecas foram utilizados:
+
+- [Typescript](https://www.typescriptlang.org/)
+- [Angular](https://angular.io/)
+- [JSON-Server](https://www.npmjs.com/package/json-server)
+- [Font-Awesome](https://github.com/FortAwesome/angular-fontawesome)
 
 
+## Estrutura do Código
 
-
-
-
-
-
-
-json web server
-
-json-server --watch ./src/assets/json-server/db.json
+```
+src 
+├───app
+│   │   
+│   ├───layout                          # Componentes que toda a aplicação utiliza
+│   │   ├───footer
+│   │   ├───header
+│   │   │   └───components              # Componentes utilizados dentro do header
+│   │   └───sidebar
+│   │           
+│   ├───onboarding
+│   │   ├───components                  # Componentes utilizados na página onboarding
+│   │   │   ├───card
+│   │   │   │   ├───account-data-card
+│   │   │   │   └───user-data-card
+│   │   │   │
+│   │   │   ├───form
+│   │   │   └───stepper
+│   │   │           
+│   │   ├───models                      # Interfaces utilizadas na página de onboarding
+│   │   └───services                    # Serviços utilizados na página de onboarding
+│   │           
+│   └───shared                          # Pasta para organizar elementos comuns na aplicação
+│       └───validators                  # Métodos para validação de formulários
+│               
+├───assets
+│   ├───images                          # Imagens utilizadas na aplicação
+│   │   └───icons                       # Ícones utilizados na aplicação
+│   └───json-server                     # Configurações do pacote json-server
+│           
+└───environments                        # Arquivos de configuração de variáveis de ambiente
+        environment.prod.ts
+        environment.ts
+``` 
