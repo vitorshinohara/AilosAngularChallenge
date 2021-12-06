@@ -12,14 +12,17 @@ export class OnboardingComponent implements OnInit {
   buttonsToDisplay: string[] = ["onboarding_tips"]
   userData : UserData | undefined
   accounts : Account[] | undefined
+  isLoading: boolean = false
 
   constructor(private onboardingService : OnboardingService) { }
 
   loadCpfData(cpf : string) {
+    this.isLoading = true
     this.onboardingService.getUserDataByCpf(cpf).subscribe( response => {
       this.userData = response
       this.accounts = response.account
       this.buttonsToDisplay = ["onboarding", "onboarding_tips"]
+      this.isLoading = false
     } )
     
   }

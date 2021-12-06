@@ -11,7 +11,7 @@
             Digite apenas os números (sem pontos ou traços). 
         </div> <!--- subtitle -->
 
-        <app-onboarding-form  (formSubmissionData)=loadCpfData($event)></app-onboarding-form>
+        <app-onboarding-form [isLoading]="isLoading" (formSubmissionData)=loadCpfData($event)></app-onboarding-form>
         
         <div class="cardContainer" *ngIf="userData">
             <app-user-data-card [user]="userData.user"></app-user-data-card>

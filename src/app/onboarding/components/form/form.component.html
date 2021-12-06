@@ -12,7 +12,8 @@
         >
     </div>
 
-    <button class="btn btn-default btn-submit" type="submit" [disabled]="cpf?.invalid">
+    <button class="btn btn-default btn-submit" type="submit" [disabled]="cpf?.invalid || isLoading">
+        <fa-icon *ngIf="isLoading" class="spinner" [spin]="true" [icon]="faSpinner"></fa-icon>
         Consultar por CPF
     </button>
 

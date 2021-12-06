@@ -1,7 +1,8 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { ValidateCPF } from 'src/app/shared/validators/cpf-validator';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-onboarding-form',
@@ -11,7 +12,9 @@ import { ValidateCPF } from 'src/app/shared/validators/cpf-validator';
 export class FormComponent implements OnInit {
   
   @Output() formSubmissionData = new EventEmitter<string>();
+  @Input() isLoading : boolean = false
 
+  faSpinner = faSpinner
   constructor() { }
 
   searchByCpfForm = new FormGroup({
