@@ -43,6 +43,7 @@ input {
 .btn-submit {
   height: 34px;
   margin-left: 24px;
+  min-width: 172px;
 }
 
 .spinner {
