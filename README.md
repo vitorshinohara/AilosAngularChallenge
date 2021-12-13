@@ -19,7 +19,6 @@ Para este projeto, utilizamos o framework [Angular](https://angular.io/). Além 
 
 <div align="center">
 	<img src="https://i.imgur.com/MP4Fnia.png" width=650/>
-	<img src="https://i.imgur.com/OTB1iin.gif" width=650/>
 </div>
 
 ## :computer: Instalação
